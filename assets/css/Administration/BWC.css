@@ -1,0 +1,69 @@
+
+.outline {
+    border: 1px solid black;
+    width: auto;
+    height: auto;
+    padding: 15px 8%;
+    border-radius: 10px;
+}
+
+.border {
+    text-align: center;
+    float: left;
+    border: 1px solid black;
+    width: 270px;
+    height: 450px;
+    margin: 10px;
+}
+
+.border:hover {
+    transition-duration: 200ms;
+    cursor: pointer;
+    transition-delay: 50ms;
+    box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.02), 0 6.7px 5.3px rgba(0, 0, 0, 0.028), 0 12.5px 10px rgba(0, 0, 0, 0.035), 0 22.3px 17.9px rgba(0, 0, 0, 0.042), 0 41.8px 33.4px rgba(0, 0, 0, 0.05), 0 100px 80px rgba(0, 0, 0, 0.07);
+}
+
+.circle img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    height: 140px;
+    width: 140px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+    border-radius: 50%;
+}
+
+div div p {
+    padding: 0 15px;
+}
+
+.name {
+    margin-top: 15px;
+    font-weight: bold;
+    font-size: 110%;
+}
+
+.last {
+    clear: left;
+    padding-top: 60px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 110%;
+}
+
+.topic p {
+    text-align: left;
+    padding-left: 10px;
+}
+
+@media all and (max-width: 630px) {
+    .border {
+        text-align: center;
+        border: 1px solid black;
+        width: 270px;
+        height: 450px;
+        position: relative;
+/*         margin-left: 32px; */
+    }
+}

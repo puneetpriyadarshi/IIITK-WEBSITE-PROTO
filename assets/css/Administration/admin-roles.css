@@ -1,0 +1,64 @@
+.container {
+  padding: 1% 0;
+}
+
+.img {
+  text-align: center;
+  padding-top: 1%;
+  padding-bottom: 1%;
+}
+
+.frame {
+  width: 200px;
+  position: relative;
+}
+
+.frame img {
+  width: 200px;
+  border: 5px solid #1768AC;
+  border-radius: 5px;
+}
+
+.frame img:hover {
+  transition: 0.6s ease;
+  border: 5px solid #1f2022;
+  border-radius: 5px;
+  transform: scale(1.05);
+  transition: 0.6s ease-in-out;
+}
+
+.frame span {
+  position: absolute;
+  width: 100%;
+  bottom: -1%;
+  color: #ffffff;
+  left: 50%;
+  transform: translate(-50%, 0);
+  background: #1768AC;
+  border-radius: 0 0 5px 5px;
+}
+
+.custom-card {
+  padding: 4% 2%;
+  border-radius: 5px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.3) 0 1px 5px;
+  -moz-box-shadow: rgba(0, 0, 0, 0.3) 0 1px 5px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0 1px 5px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  background-color: #fff;
+}
+
+.custom-card:hover {
+  -webkit-box-shadow: rgba(0, 0, 0, 0.2) 0 5px 30px;
+  -moz-box-shadow: rgba(0, 0, 0, 0.2) 0 5px 30px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0 5px 30px;
+  transition: 0.6s ease;
+}
+
+
+a
+.card-details {
+  text-align: left;
+  padding-top: 1%;
+  padding-bottom: 1%;
+}

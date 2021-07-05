@@ -1,0 +1,53 @@
+.main-content {
+    margin-top: 3%;
+    margin-left: auto;
+    margin-right: auto;
+    border: 2px solid black;
+    width: 80%;
+    padding: 2%;
+    border-radius: 10px;
+    margin-bottom: 7%;
+    box-shadow: 0 2.3px 4.7px rgba(0, 0, 0, 0.037), 0 6.4px 11px rgba(0, 0, 0, 0.062), 0 15.4px 22.4px rgba(0, 0, 0, 0.081), 0 51px 112px rgba(0, 0, 0, 0.11);
+}
+main h3 {
+    background: rgb(72 23 167);
+    /*background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 33%, rgba(0, 212, 255, 1) 100%);*/
+    color: #ffffff;
+    padding-left: 10px;
+    margin-bottom: 3%;
+}
+
+.main-content i{
+    color: #ff0000 !important;
+}
+.main-content a {
+    text-decoration: none;
+    position: relative;
+    color: black;
+    font-weight: bolder;
+}
+
+.main-content a:hover {
+    color: #1768AC;
+}
+
+.main-content a:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    border-bottom: 2px solid #1768AC;
+    transition: 0.4s;
+}
+
+.main-content a:hover:after {
+    width: 100%;
+}
+
+
+@media all and (max-width: 800px) {
+    .main-content {
+        width: 80%;
+    }
+}

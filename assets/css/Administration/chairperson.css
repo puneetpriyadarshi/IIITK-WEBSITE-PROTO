@@ -1,0 +1,60 @@
+.Container {
+    border: 1px solid black;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: center;
+    padding-bottom: 20px;
+    padding-top: 30px;
+    padding-left: 28px;
+    padding-right: 28px;
+}
+
+
+}
+#item1 {
+    align-self: center;
+}
+#item2 {
+    align-self: center;
+}
+.item img {
+    height: 380px;
+    width: 380px;
+    border-radius: 50%;
+    border: 2px solid rgb(245, 246, 246);
+    border-radius: 4cm;
+    margin-bottom: 20px;
+
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+}
+.Container .item .para1 {
+    padding-top: 10px;
+    color: #2541B2;
+    font-weight: bold;
+}
+.Container .item .para2 {
+    text-align: justify;
+}
+.Container .item .para2 .a {
+    color: #2541B2;
+    font-weight: bold;
+}
+
+/* #item1 :hover {
+    box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.02), 0 6.7px 5.3px rgba(0, 0, 0, 0.028), 0 12.5px 10px rgba(0, 0, 0, 0.035), 0 22.3px 17.9px rgba(0, 0, 0, 0.042), 0 41.8px 33.4px rgba(0, 0, 0, 0.05), 0 100px 80px rgba(0, 0, 0, 0.07);
+    border: none;
+    cursor: pointer;
+    transition-duration: 6s ease;
+} */
+@media all and (max-width: 800px) {
+    .Container {
+        padding: 20px 10px;
+    }
+    
+    .item img {
+        height: 220px;
+        width: 220px;
+    }
+}

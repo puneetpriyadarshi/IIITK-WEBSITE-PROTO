@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html>
+<title>Undergraduate</title>
+
+<head>
+
+
+
+
+    <link rel="icon" href="iiitk-logo.webp" type="image/webp" sizes="16x16">
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/iiitk/iiitk-logo.webp" type="image/webp" sizes="16x16">
+
+    <!-- bootstarp linkings-->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+    <!--aos Library starting-->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!--aos Library Ending-->
+
+    <!--bootstarp linkings End-->
+
+    <!--Custom css linkings-->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <!-- Custom css linkings End-->
+
+    <!--Font linking-->
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Chettan+2&display=swap" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
+    <!--Font linking End-->
+
+    <!--Font awesome icon linking-->
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+
+    <!--Font awesome icon End-->
+
+    <style type="text/css">
+            .main-content {
+            padding: 0;
+            margin: 0;
+        }
+        
+        .container-main {
+            border: 1px solid black;
+            border-radius: 10px;
+            width: 95%;
+            height: auto;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 1% 0.7%;
+            /* padding-left: 0.7%;
+            padding-right: 0.7%; */
+            margin-bottom: 14px;
+            text-align: left;
+        }
+        
+        .para-main {
+            color: black;
+            text-align: justify;
+        }
+        
+        .top-heading-main {
+            text-align: center;
+            margin-top: 3px;
+            font-weight: bold;
+            font-size: 40px;
+            padding-bottom: 10px;
+            color: darkblue;
+        }
+        
+        .sub-heading-main {
+            font-weight: bold;
+            font-size: 23px;
+            color: darkslateblue;
+        }
+        
+        .branch-main {
+            list-style: none;
+        }
+        
+        .fa-angle-right:before {
+            content: "\f105";
+            font-size: 15px;
+            padding-right: 7px;
+            margin-left: -11px;
+        }
+        /* .courses-main {
+            text-decoration: none;
+            position: relative;
+            color: black;
+        }
+        
+        .courses-main:hover {
+            text-decoration: none;
+            color: #1768ac;
+        }
+        
+        .course-main:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0%;
+            border-bottom: 1px solid #1768ac;
+            transition: 0.7s;
+        }
+        
+        .course-main:hover:after {
+            width: 100%;
+        } */
+        
+        .courses-main {
+            text-decoration: none;
+            position: relative;
+            color: black;
+        }
+        
+        .courses-main:hover {
+            text-decoration: none;
+            color: #1768ac;
+        }
+        
+        .courses-main:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0%;
+            border-bottom: 1.1px solid #1768ac;
+            transition: 0.7s;
+        }
+        
+        .courses-main:hover:after {
+            width: 100%;
+        }
+        
+        .links-main {
+            text-decoration: none;
+            position: relative;
+            color: #1768ac;
+        }
+        
+        .links-main:hover {
+            text-decoration: none;
+            color: #1768ac;
+        }
+        
+        .links-main:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0%;
+            border-bottom: 1px solid #1768ac;
+            transition: 0.7s;
+        }
+        
+        .links-main:hover:after {
+            width: 100%;
+        }
+        
+        #link-last-main {
+            text-decoration: none;
+            position: relative;
+            color: #1768ac;
+        }
+        
+        #link-last-main:hover {
+            text-decoration: none;
+            color: #1768ac;
+        }
+        
+        #link-last-main:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0%;
+            border-bottom: 2.3px solid #1768ac;
+            transition: 0.6s;
+        }
+        
+        #link-last-main:hover:after {
+            width: 100%;
+        }
+        
+        .download-main {
+            text-decoration: none;
+            position: relative;
+            color: black;
+            font-weight: bolder;
+        }
+        
+        .download-main:hover {
+            text-decoration: none;
+            color: #1768ac;
+        }
+        
+        .download-main:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0%;
+            border-bottom: 2px solid #1768ac;
+            transition: 0.7s;
+        }
+        
+        .download-main:hover:after {
+            width: 100%;
+        }
+        
+        .download-gui-main {
+            text-decoration: none;
+            position: relative;
+            color: black;
+            font-weight: bolder;
+            margin-top: -10px
+        }
+        
+        .download-gui-main:hover {
+            text-decoration: none;
+            color: #1768ac;
+        }
+        
+        .download-gui-main:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0%;
+            border-bottom: 2px solid #1768ac;
+            transition: 0.7s;
+        }
+        
+        .download-gui-main:hover:after {
+            width: 100%;
+        }
+        
+        .sub-grp-main {
+            position: relative;
+            list-style-type: decimal;
+        }
+        
+        .a {
+            font-weight: bold;
+            padding-bottom: 8px;
+            color: darkslateblue
+        }
+        
+        .sub-list-main a {
+            font-weight: bold;
+            margin-left: -39px;
+        }
+        
+        .sub-list-main {
+            position: relative;
+            list-style-type: lower-alpha;
+            padding-top: 10px;
+        }
+        
+        .small-main {
+            margin-bottom: 9px;
+        }
+        
+        .sub-list-main li:last-child {
+            position: relative;
+            margin-bottom: 18px;
+        }
+        
+        @media screen and (max-width: 800px) {
+            .container-main {
+                padding-left: 2%;
+                padding-right: 2%;
+            }
+            .fa-angle-right:before {
+                margin-left: -27px;
+            }
+            .courses-main {
+                text-align: left;
+                margin-left: -15px;
+            }
+            .a {
+                margin-left: -16px;
+            }
+            .sub-list-main li {
+                margin-left: -12px;
+            }
+    </style>
+
+</head>
+
+<body>
+
+    <!--Nav Bar Starting-->
+
+    <nav>
+        <div class="logogsk">
+            <a href="index.html"><img src="images/iiitk/iiitk-logo.webp" width="50" height="50"></a>
+        </div>
+        <label for="btn" class="icon">
+      <span class="fa fa-bars"></span>
+    </label>
+        <input type="checkbox" id="btn">
+        <ul>
+
+            <li><a class="nothing" href="index.html">Home</a></li>
+            <li>
+                <label for="btn-1" class="show">The Institute <i class="fa fa-angle-down" aria-hidden="true"></i> </label>
+                <a href="">The Institute</a>
+                <input type="checkbox" id="btn-1">
+                <ul>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </li>
+            <li>
+                <label for="btn-2" class="show">Director <i class="fa fa-angle-down" aria-hidden="true"></i> </label>
+                <a href="">Director</a>
+                <input type="checkbox" id="btn-2">
+                <ul>
+                    <li><a href="dir-profile.html">Director's Profile</a></li>
+                    <li><a href="dir-message.html">Director's Message</a></li>
+
+                </ul>
+            </li>
+            <li>
+                <label for="btn-3" class="show">Administration <i class="fa fa-angle-down" aria-hidden="true"></i> </label>
+                <a href="">Administration</a>
+                <input type="checkbox" id="btn-3">
+                <ul>
+                    <li><a href="visitor.html">Visitor</a></li>
+                    <li><a href="https://iiitcouncil.com" target="_blank">IIIT Council</a></li>
+                    <li><a href="act-statutes.html">Act and Statutes</a></li>
+                    <li><a href="chairperson.html">Chairperson</a></li>
+                    <li><a href="bog.html">Board of Governors</a></li>
+                    <li><a href="finance-committee.html">Finance Committee</a></li>
+                    <li><a href="bwc.html">Building and Work Committee</a></li>
+                    <li><a href="senate.html">Senate</a></li>
+                    <li><a href="admin-roles.html">Administrative Roles</a></li>
+
+                </ul>
+            </li>
+            <li>
+                <label for="btn-4" class="show">Academics <i class="fa fa-angle-down" aria-hidden="true"></i> </label>
+                <a href="">Academics</a>
+                <input type="checkbox" id="btn-4">
+                <ul>
+                    <li>
+                        <label for="btn-12" class="show">Departments <i class="fa fa-angle-down" aria-hidden="true"></i> </label>
+                        <a href="">Departments <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                        <input type="checkbox" id="btn-12">
+                        <ul>
+
+                            <li><a href="cse.html">Computer Science and Engineering</a></li>
+                            <li><a href="dsc.html">Department of Science</a></li>
+                            <li><a href="ece.html">Electronics and Communication Engineering</a></li>
+                            <li><a href="mech.html">Mechanical Engineering</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <label for="btn-13" class="show">Admissions <i class="fa fa-angle-down" aria-hidden="true"></i> </label>
+                        <a href="">Admissions <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                        <input type="checkbox" id="btn-13">
+                        <ul>
+                            <li><a href="undergraduate.html">Undergraduate </a></li>
+                            <li><a href="postgraduate.html">Postgraduate </a></li>
+                            <li><a href="doctoral.html">Doctoral </a></li>
+                            <li><a href="overview.html">Overview </a></li>
+                        </ul>
+                    </li>
+                    <li><a href="pdf/Academics/Academic calendar/Academic Calendar.pdf">Academic Calendar</a></li>
+                    <li><a href="pdf/Academics/Holiday list/Holiday.pdf">Holiday List</a></li>
+                    <li><a href="time-table.html">Time Table</a></li>
+                    <li><a href="pdf/Academics/Fees/B-tech fee.pdf">B. Tech. Fee Structure(2019-2020)</a></li>
+                    <li><a href="gold.html">Gold Medal Recipient</a></li>
+                    <li>
+                        <label for="btn-8" class="show">Circulars <i class="fa fa-angle-down" aria-hidden="true"></i> </label>
+                        <a href="">Circulars <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                        <input type="checkbox" id="btn-8">
+                        <ul>
+                            <li><a href="pdf/Academics/Circulars/Provisional-certificate.pdf">Provisional Certificate </a></li>
+                            <li><a href="pdf/Academics/Circulars/Medium-of-percent.pdf">Medium of Instruction </a></li>
+                            <li><a href="pdf/Academics/Circulars/Cgpa-to-percentage.pdf">CGPA into Percentage </a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <label for="btn-10" class="show">Alumni <i class="fa fa-angle-down" aria-hidden="true"></i> </label>
+                        <a href="">Alumni <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                        <input type="checkbox" id="btn-10">
+                        <ul>
+                            <li><a href="2019-passout.html">2019 Passouts </a></li>
+
+                        </ul>
+                    </li>
+                    <li>
+                        <label for="btn-9" class="show">Application Forms for Different Purposes <i class="fa fa-angle-down" aria-hidden="true"></i> </label>
+                        <a href="">Application Forms for Different Purposes <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                        <input type="checkbox" id="btn-9">
+                        <ul>
+
+                            <li><a href="pdf/Academics/Admission form/EDUCATION VERIFICATION FORM.pdf">Edication Verification Form </a></li>
+                            <li><a href="pdf/Academics/Admission form/CHANGE BRANCH.pdf"> Change of Branch </a></li>
+                            <li><a href="pdf/Academics/Admission form/MAKE-UP EXAMINATION.pdf"> Form for Make-up Examination </a></li>
+
+                        </ul>
+                    </li>
+                    <li>
+                        <label for="btn-11" class="show">Students <i class="fa fa-angle-down" aria-hidden="true"></i> </label>
+                        <a href="">Students <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                        <input type="checkbox" id="btn-11">
+                        <ul>
+                            <li><a href="2016-admit.html">2016 Admitted Batch</a></li>
+                            <li><a href="2017-admit.html">2017 Admitted Batch</a></li>
+                            <li><a href="2018-admit.html">2018 Admitted Batch</a></li>
+                            <li><a href="2019-admit.html">2019 Admitted Batch</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <label for="btn-5" class="show">Activities <i class="fa fa-angle-down" aria-hidden="true"></i> </label>
+                <a href="">Activities</a>
+                <input type="checkbox" id="btn-5">
+                <ul>
+                    <li><a href="workshop.html">Workshops</a></li>
+                    <li><a href="placement-cell.html">Internship and Placement Cells </a></li>
+                    <li><a href="newsletter.html">Institute Newsletter</a></li>
+                    <li><a href="ssg.html">Social Service Group</a></li>
+                    <li><a href="cultural-events.html">Cultural Events</a></li>
+                    <li><a href="sports.html">Sports Activities</a></li>
+                </ul>
+            </li>
+            <li>
+                <label for="btn-6" class="show">Research <i class="fa fa-angle-down" aria-hidden="true"></i> </label>
+                <a href="">Research</a>
+                <input type="checkbox" id="btn-6">
+                <ul>
+                    <li><a href="research-project.html">Research Projects/Collaborations</a></li>
+                    <li><a href="research-publication.html">Research Publications</a></li>
+                    <li><a href="research-scholar.html">Research Scholars/Staffs</a></li>
+                </ul>
+            </li>
+            <li>
+                <label for="btn-7" class="show">Other Links <i class="fa fa-angle-down" aria-hidden="true"></i> </label>
+                <a href="">Other Links</a>
+                <input type="checkbox" id="btn-7">
+                <ul>
+                    <li><a href="icc.html">ICC</a></li>
+                    <li><a href="https://www.mhrd.gov.in/" target="_blank">MHRD</a></li>
+                    <li><a href="https://josaa.nic.in/WebInfo/Page/Page?PageId=1&LangId=P" target="_blank">JOSAA</a></li>
+                    <li><a href="logo-depiction.html">Depiction of our logo</a></li>
+                    <li><a href="http://172.16.16.14:8081/" target="_blank">Central Library</a></li>
+                    <li><a href="https://nad.gov.in/" target="_blank">National Academic Depository(NAD)</a></li>
+                    <li><a href="carrer-opportunities.html">Carrer Opportunities</a></li>
+                    <li><a href="https://www.onlinesbi.com/sbicollect/icollecthome.htm?corpID=927770" target="_blank">SB Collect</a></li>
+                    <li><a href="anti-ragging.html">Anti Ragging</a></li>
+                    <li><a href="achievements.html">Achievements</a></li>
+                    <li><a href="press-release.html">Press Releases</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                </ul>
+            </li>
+            <li><a class="nothing" href="rti.html">RTI</a></li>
+            <li><a class="nothing" href="contact.html">Contact Us</a></li>
+            <li><a class="nothing" href="https://accounts.google.com/signin/v2/identifier?continue=https%3A%2F%2Fmail.google.com%2Fmail%2F&service=mail&hd=iiitk.ac.in&sacu=1&flowName=GlifWebSignIn&flowEntry=AddSession" target="_blank">IIITK MAIL</a></li>
+        </ul>
+    </nav>
+
+    <script>
+        $('.icon').click(function() {
+            $('span').toggleClass("cancel");
+        });
+    </script>
+    <!--Nav Bar Ending-->
+    <!--Head introduction-->
+
+
+
+    <section>
+        <div class="top-heading">
+            <div class="banner">
+                <div class="overlay">
+                    <div class="heading" data-aos="fade-down">
+                        <h1>
+                            INDIAN INSTITUTE OF INFORMATION TECHNOLOGY, DESIGN AND MANUFACTURING, KURNOOL
+                        </h1>
+                    </div>
+                    <div class="container lower-heading" data-aos="fade-up">
+                        <div class="row">
+                            <div class="col-md-5 iiit">
+                                <h2>ఇండియన్ ఇన్స్టిట్యూట్ ఆఫ్ ఇన్ఫర్మేషన్ టెక్నాలజీ, డిజైన్ అండ్ మాన్యుఫ్యాక్చరింగ్, కర్నూలు</h2>
+                            </div>
+                            <div class="col-md-2 container-logo">
+                                <img class="logo" src="images/iiitk/iiitk-logo.webp">
+                            </div>
+                            <div class="col-md-5 iiit">
+                                <h2>भारतीय सूचना प्रौद्योगिकी संस्थान, अभिकल्पना और विनिर्माण, कर्नूल</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!--Head introduction Ending-->
+
+
+    <!-- Main content section Starting-->
+    <main>
+
+        <div class="main-content">
+            <h2 class="content-heading" data-aos="fade-down">Undergraduate</h2>
+
+            <div class="container-main">
+
+
+
+                <p class="para-main">Undergraduate programmes have attracted high ranking JEE-Main students and have earned appreciation for the design focussed engineering curricula. Our novel design-centric undergraduate programme have earned a good reputation among industries
+                    and foreign universities as well.</p>
+
+                <div class="sub-heading-main">List of Programmes Offered</div>
+
+                <ol class="branch-main">
+                    <li><i class="fas fa-angle-right"></i> <a class="courses-main" href="cse.html"> Computer Engineering</a></li>
+                    <li><i class="fas fa-angle-right"></i> <a class="courses-main" href="ece.html"> Electronics and Communication Engineering</a></li>
+                    <li><i class="fas fa-angle-right"></i> <a class="courses-main" href="mech.html"> Mechanical Engineering</a></li>
+                </ol>
+
+                <div class="sub-heading-main">How to Apply?</div>
+
+                <p class="para-main">The mode of admission is based on the JEE (Main) and Plus-2 Normalized Score. The seat allotment to the B.Tech programmes is based on All India Rank published by CBSE. Admission is based only on All India Rank (AIR). State Rank is not
+                    Considered for admission into IIITs.</p>
+
+                <p class="para-main">The admission to Foreign Nationals / Persons of Indian Origin (PIOs) / Non-Resident Indians (NRIs) is through Direct Admission of Students Abroad (DASA).</p>
+
+                <div class="sub-heading-main">Fee Structure for Jul-Dec 2019 Semester</div>
+                <p class="para-main">The First year B.Tech Fee Structure for the Academic Year 2019 - 2020 <a class="download-main" href="">Download Now</a></p>
+                <p class="para-main">The Fees payable for the Odd Semester i.e., Jul-Dec 2019, for the other batches is as under:
+                </p>
+                <p class="para-main">All the students are requested to pay the fees only through online on or before 17.06.2019.</p>
+                <p class="para-main">Online payment can be done through SBI collect only accessible from the <a class="links-main" href="http://www.iiitk.ac.in/">www.iiik.ac.in</a> website. The last date for payment of fee is as under:</p>
+
+                <div class="sub-heading-main">Scholarship Opportunity</div>
+                <p class="para-main">Prospective undergraduate students can avail scholarships / financial assistance based on merit and parental income levels from State / Central Government.</p>
+
+                <ol class="sub-grp-main">
+                    <li class="a">Top class Education for SC students</li>
+                    <p class="para-main small-main "><i class="fas fa-angle-right"></i>Ten fresh slots have been allotted by the Ministry of Social Justice and Empowerment for the SC students. Top Class Education Scholarship is sanctioned to SC students admitted to B.Tech programme whose
+                        parental annual income is less than Rs. 6.0 lakhs as per scheme norms. Scheme guidelines are available at <a class="links-main" href="https://scholarships.gov.in/">  www.scholarships.gov.in</a>. </p>
+
+                    <a class="download-gui-main " href=""><i class="fas fa-angle-right"></i>  Download Guidelines</a>
+
+                    <ol class="sub-list-main "> <a><i class="fas fa-angle-right"></i>  Benefits under this scheme:</a>
+                        <li>Full tuition fee and non-refundable charges </li>
+                        <li>Living expenses to the beneficiary @ Rs.2220/- per month per student limited to Rs. 26640/- per annum or the actuals whichever is less.</li>
+                        <li>Books and stationary @ Rs.3000/- per annum per student.</li>
+                        <li>A latest computer/laptop of reputed brand with accessories like UPS and printer limited to Rs.45000/- or the actuals whichever is less per student as one-time assistance during the course.</li>
+                    </ol>
+
+                    <li class="a">National Fellowship and Scholarship for Higher Education for ST students</li>
+                    <p class="para-main small-main"><i class="fas fa-angle-right"></i>The Ministry of Tribal Affairs, Government of India is implementing the scheme of “National Fellowship and Scholarship for Higher Education for ST students” under which financial assistance is provided
+                        to ST students admitted to B. Tech programme as per scheme norms. Scheme guidelines are available at <a class="links-main" href="https://scholarships.gov.in/"> www.scholarships.gov.in.</a></p>
+
+                    <a class="download-gui-main" href=""><i class="fas fa-angle-right"></i>Download Guidelines</a>
+                    <br>
+                    <ol class="sub-list-main"> <a><i class="fas fa-angle-right"></i>Benefits under this scheme:</a>
+                        <li>An amount of up to Rs. 45000/- is admissible for a student for purchase of Computer/accessories subject to actual once during the entire course of duration.</li>
+                        <li>Books/Stationery (Maximum Rs. 3000/- per annum subject to actual).</li>
+                        <li>Non- Refundable charges (as per Institute norms).</li>
+                        <li>Living Expenses @ Rs. 2200/- per month for students who live in Institutes (Rs. 26400/- per annum subject to actual).</li>
+                    </ol>
+
+                    <li class="a">More details about other scholarships are available at <a id="link-last-main" href="https://scholarships.gov.in/"> National Scholarship Portal </a></li>
+
+                </ol>
+
+            </div>
+
+        </div>
+
+    </main>
+
+
+
+    <!-- Main content section Ending-->
+
+    <footer data-aos="fade-up">
+
+        <div class="footer-container" id="footer-section">
+            <div class="colour">
+
+
+
+                <h2>Address</h2>
+                <p>
+                    Jagannathagattu Hill, Kurnool- 518 007, Andhra Pradesh, India.<br /> Phone: +91 - 8518 289114<br /> Fax: +91 - 8518 289127<br /> Email: office@iiitk.ac.in<br /> Work Hours: 9.00 AM to 5.45 PM<br />
+                </p>
+
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d807.2173752198663!2d78.03587280561256!3d15.762002339033062!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x52358ddcfb659cb9!2sIIITDM%20Kurnool!5e0!3m2!1sen!2sin!4v1598777206384!5m2!1sen!2sin"
+                    width="95%" height="300px" frameborder="0" style="border:0; border-radius: 4px;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+
+            </div>
+
+
+        </div>
+
+        <div class="down-links">
+
+            <a href="">Director</a>
+            <a href="">Gallery</a>
+            <a href="">Privacy Policy</a>
+            <a href="">Terms & Conditions</a>
+            <a href="">Contact us</a>
+            <a href="">About us</a>
+
+        </div>
+
+
+
+        <div class="credits">
+
+            <div class="social-links">
+
+                <a target="_blank" href="https://www.facebook.com/Iiitdm-Kurnool-211133533006549/"><i class="fab fa-facebook-f socialplugs" aria-hidden="true"></i></a>
+                <a target="_blank" href="https://twitter.com/iiitdmkurnool"><i class="fab fa-twitter socialplugs" aria-hidden="true"></i></a>
+                <a target="_blank" href="https://www.youtube.com/channel/UCXUm4xE1QB6jkBMRBnmtguw"><i class="fab fa-youtube socialplugs" aria-hidden="true"></i></a>
+            </div>
+
+            <p>Copyright © 2019, Indian Institute of Information Technology, Design and Manufacturing, Kurnool. All rights reserved.
+            </p>
+        </div>
+
+    </footer>
+    <!--aos lib js star-->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <!--aos lib js end-->
+    <script>
+        AOS.init({
+            offset: 200,
+            duration: 1000
+        });
+    </script>
+    <!-- scroll to top-->
+    <script src="https://unpkg.com/vanilla-back-to-top@7.2.1/dist/vanilla-back-to-top.min.js"></script>
+    <script>
+        addBackToTop({
+            scrollDuration: 300,
+            diameter: 45,
+            backgroundColor: '#2541B2',
+            textColor: '#fff',
+            zIndex: 2
+        })
+    </script>
+    <!-- scroll to top End-->
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

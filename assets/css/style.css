@@ -1,0 +1,618 @@
+/* #03256C Dark-blue #2541B2 blue #1768AC green #06BEE1 light-green #FFFFFF white */
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Baloo Chettan 2', cursive;
+  background-image: url('../../images/iiitk/texture/dust-texture.png');
+}
+@font-face {font-family: "Algerian";
+  src: url("//db.onlinewebfonts.com/t/6f654b0b7ea8cedb893c861b67ad763a.eot");
+  src: url("//db.onlinewebfonts.com/t/6f654b0b7ea8cedb893c861b67ad763a.eot?#iefix") format("embedded-opentype"),
+  url("//db.onlinewebfonts.com/t/6f654b0b7ea8cedb893c861b67ad763a.woff2") format("woff2"),
+  url("//db.onlinewebfonts.com/t/6f654b0b7ea8cedb893c861b67ad763a.woff") format("woff"),
+  url("//db.onlinewebfonts.com/t/6f654b0b7ea8cedb893c861b67ad763a.ttf") format("truetype"),
+  url("//db.onlinewebfonts.com/t/6f654b0b7ea8cedb893c861b67ad763a.svg#Algerian") format("svg");
+}
+
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #fbfbfb;
+  z-index: 99999;
+  display: block;
+}
+
+.preloader-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.preloader-gif {
+  position: relative;
+  margin: 0 200px;
+}
+
+#preloader p {
+  position: relative;
+  padding: 0 20%;
+  font-size: 1.3rem;
+  font-weight: 100;
+  font-weight:bolder;
+  font-family:algerian, san-serif;
+}
+
+/* Menubar css startig here*/
+nav {
+  background: #03256c;
+}
+
+nav:after {
+  content: '';
+  clear: both;
+  display: table;
+}
+
+nav .logogsk {
+  float: left;
+  color: white;
+  font-size: 27px;
+  font-weight: 600;
+  line-height: 70px;
+  padding-left: 20px;
+}
+
+.logogsk img {
+  margin-top: -10px;
+  margin-bottom: -6px;
+  margin-left: 20px;
+}
+
+nav ul {
+  float: right;
+  margin-right: 20px;
+  list-style: none;
+  position: relative;
+  margin-bottom: -69px;
+}
+
+nav ul li {
+  float: left;
+  display: inline-block;
+  background: #03256c;
+  margin: 0 5px;
+}
+
+nav ul li a {
+  color: white;
+  line-height: 70px;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 18.5px 15px;
+}
+
+nav ul li a:hover {
+  color: #06bee1;
+  text-decoration: none;
+  /* border-radius: 5px;
+  box-shadow: 0 0 5px #33ffff, 0 0 10px #66ffff; */
+  /* border-bottom: 4px solid #06bee1; */
+}
+
+nav ul ul li:hover {
+  background: #06bee1;
+}
+
+nav ul ul li a:hover {
+  /* box-shadow: none;
+  border-bottom: none; */
+  color: white;
+}
+
+nav ul ul {
+  position: absolute;
+  top: 90px;
+  opacity: 0;
+  visibility: hidden;
+  /* transition: top .6s; */
+  /* border-top: 3px solid cyan; */
+  margin-top: -0.4px;
+  margin-left: -2.7%;
+  z-index: 3;
+}
+
+nav ul ul ul {
+  margin-top: -10px;
+  margin-left: 47.45%;
+  border-top: none;
+}
+
+nav ul li:hover>ul {
+  top: 70px;
+  opacity: 1;
+  visibility: visible;
+}
+
+nav ul ul li {
+  position: relative;
+  margin: 0px;
+  min-width: 150px;
+  float: none;
+  display: list-item;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+  border-left: 4px solid #03256c;
+  background: white;
+  box-shadow: 3px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+nav ul ul li:last-child {
+  border-bottom: none;
+}
+
+nav ul ul li a {
+  color: black;
+  line-height: 50px;
+}
+
+nav ul ul ul li {
+  border-left: 4px solid #03256c;
+  position: relative;
+  width: 250px;
+  top: -60px;
+  left: 150px;
+  text-align: center;
+}
+
+.show,
+.icon,
+input {
+  display: none;
+}
+
+.fa-angle-down {
+  font-size: 15px;
+}
+
+@media all and (max-width: 1480px) {
+  nav ul li a {
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+
+  nav ul ul {
+    margin-left: -3.3%;
+  }
+
+  nav ul ul ul {
+    margin-left: 46%;
+  }
+}
+
+@media all and (max-width: 1380px) {
+  nav ul li a {
+    padding-right: 6px;
+    padding-left: 6px;
+  }
+
+  nav ul ul {
+    margin-left: -3.8%;
+  }
+
+  nav ul ul ul {
+    margin-left: 44.8%;
+  }
+}
+
+@media all and (max-width: 1290px) {
+  nav .logogsk {
+    padding-left: 10px;
+  }
+
+  nav ul {
+    margin-right: 0px;
+  }
+
+  nav ul li a {
+    padding-right: 4px;
+    padding-left: 4px;
+  }
+
+  nav ul ul {
+    margin-left: -4.2%;
+  }
+
+  nav ul ul ul {
+    margin-left: 44%;
+  }
+}
+
+@media all and (max-width: 1220px) {
+  nav .logogsk {
+    padding-left: 6px;
+  }
+
+  nav ul {
+    margin-right: 0px;
+  }
+
+  nav ul li a {
+    padding-right: 4px;
+    padding-left: 4px;
+  }
+
+  nav ul ul {
+    margin-left: -4%;
+  }
+
+  nav ul ul ul {
+    margin-left: 44%;
+  }
+}
+
+@media all and (max-width:1200px) {
+  nav ul {
+    margin-right: 0px;
+    float: left;
+    padding-left: 2px;
+  }
+
+  nav .logogsk {
+    padding-left: 2px;
+    width: 100%;
+  }
+
+  .show+a,
+  ul {
+    display: none;
+  }
+
+  nav ul li,
+  nav ul ul li {
+    display: block;
+    width: 90%;
+    box-shadow: none;
+    margin-left: 20px;
+  }
+
+  nav ul li a:hover {
+    box-shadow: none;
+  }
+
+  .show {
+    display: block;
+    color: white;
+    font-size: 18px;
+    padding: 0;
+    line-height: 70px;
+    cursor: pointer;
+  }
+
+  .show:hover {
+    color: cyan;
+  }
+
+  .icon {
+    display: block;
+    color: white;
+    position: absolute;
+    top: 0;
+    right: 40px;
+    line-height: 70px;
+    cursor: pointer;
+    font-size: 25px;
+  }
+
+  /* .nothing {
+        padding-left: 20px;
+    } */
+  nav ul {
+    margin-bottom: 0px;
+  }
+
+  nav ul ul {
+    top: 70px;
+    border-top: 0px;
+    float: none;
+    position: static;
+    display: none;
+    opacity: 1;
+    visibility: visible;
+    padding-left: 10px;
+  }
+
+  .leftbit {
+    padding-left: 10px;
+  }
+
+  nav ul ul a {
+    padding-left: 20px;
+  }
+
+  nav ul ul li:hover {
+    background: #03256c;
+  }
+
+  nav ul ul li a {
+    padding-left: 10px;
+  }
+
+  nav ul ul li {
+    background: #03256c;
+    border-left: 4px solid #06bee1;
+  }
+
+  nav ul ul li a:hover {
+    color: #06bee1;
+  }
+
+  nav ul ul li a {
+    color: white;
+  }
+
+  nav ul ul ul {
+    margin-left: -8px;
+  }
+
+  /* nav ul ul ul a {
+        margin-left: -40px;
+    } */
+  nav ul ul ul li a {
+    padding left: 0;
+  }
+
+  nav ul ul ul li {
+    border-left: 4px solid #06bee1;
+    position: static;
+    text-align: center;
+  }
+
+  [id^=btn]:checked+ul {
+    display: block;
+  }
+
+  nav ul ul li {
+    border-bottom: 0px;
+  }
+
+  span.cancel:before {
+    content: '\f00d';
+  }
+}
+
+/*Menu bar Ending*/
+.logo_img {
+  /* background-color: #03256C; */
+  padding: 1%;
+  text-align: center;
+  position: relative;
+}
+
+.top-heading {
+  color: #ffffff;
+  position: relative;
+  text-align: center;
+  font-weight: 900;
+  z-index: 2;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.3);
+}
+
+.banner {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background-image: url('../../images/iiitk/head-background.webp');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.overlay {
+  width: 100%;
+  height: 100%;
+  background: rgb(0, 0, 0, 0.4);
+}
+
+.row {
+  margin: 0;
+  width: 100%;
+}
+
+.heading {
+  text-align: center;
+  padding: 3% 3% 3% 3%;
+  position: relative;
+}
+
+.heading h1,
+.iiit {
+  font-weight: 900;
+  font-size: 3rem;
+  color: #ffffff;
+  font-family: "Algerian" !important;
+}
+
+.lower-heading {
+  padding: 1% 1%;
+}
+
+.container-logo {
+  text-align: center;
+  padding: 0 0 2% 0;
+}
+
+.logo {
+  width: 70%;
+}
+
+.iiit {
+  text-align: justify;
+}
+
+@media screen and (max-width:770px) {
+  .container-logo {
+    text-align: center;
+    padding: 0 0 2% 0;
+  }
+
+  .logo {
+    width: 30%;
+  }
+
+  .heading h1,
+  .iiit h2 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    padding: 3% 5%;
+  }
+
+  .container-logo {
+    text-align: center;
+    padding: 0 0 2% 0;
+  }
+
+  .logo {
+    width: 30%;
+  }
+
+  .heading h1,
+  .iiit h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 3% 5%;
+  }
+}
+
+main {
+  position: relative;
+  width: 100%;
+  font-size: 1.3rem;
+  text-align: justify;
+}
+
+.main-content {
+  padding: 2% 3%;
+}
+
+.content-heading {
+  font-size: 3rem;
+  color: #4b505e;
+  font-weight: 600;
+  padding: 2%;
+  text-align: center;
+}
+
+.content-heading::after, .footer-container h2::after {
+  content: '';
+  display: block;
+  margin: 1.75% auto;
+  width: 7rem;
+  height: 1.5px;
+  background: #4b505e;
+}
+
+.footer-container h2::after {
+  background: #fff;
+}
+
+footer {
+  text-align: center;
+}
+
+.footer-container {
+  position: relative;
+  width: 100%;
+  height: 36rem;
+  background-color: #2541B2;
+}
+
+.colour {
+  position: relative;
+  width: 100%;
+  height: 80%;
+  background-color: #06BEE1;
+  border-radius: 0 0 0 100%/ 0 0 50% 100%;
+}
+
+.footer-container h2 {
+  font-size: 3rem;
+  color: #FFFFFF;
+  font-weight: 300;
+  padding: 1% 1% 0 1%;
+}
+
+.footer-container p {
+  font-size: 1rem;
+  color: #FFFFFF;
+  font-weight: 600;
+}
+
+.footer-container iframe {
+  z-index: 2;
+}
+
+.down-links {
+  position: relative;
+  margin: auto;
+  width: 100%;
+  background-color: #1768AC;
+  padding: 2% 12%;
+}
+
+.down-links a {
+  color: #FFFFFF;
+  text-decoration: none;
+  padding: 0 3%;
+  display: inline;
+  font-weight: 600;
+}
+
+.down-links a:hover {
+  color: #ffc837;
+  transition: 0.3s ease;
+}
+
+.social-links {
+  position: relative;
+}
+
+.social-links a {
+  display: inline;
+  padding: 1.5%;
+  color: #fff;
+  font-size: 1.2rem;
+}
+
+.social-links a:hover {
+  color: #ffc837;
+  transition: 0.3s ease;
+}
+
+.credits {
+  position: relative;
+  z-index: 1;
+  color: #FFFFFF;
+  background-color: #03256C;
+  padding: 1% 2%;
+  overflow: hidden;
+  height: 5rem;
+}
+
+@media screen and (max-width:770px) {
+  .footer-container {
+    height: 33rem
+  }
+
+  .content-heading, .footer-container h2 {
+    font-size: 2rem;
+  }
+
+  .content-heading::after {
+    width: 5rem;
+  }
+}
